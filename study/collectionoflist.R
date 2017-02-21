@@ -1,0 +1,24 @@
+#列表的子集
+x<-list(id=1:4,height=170,gender="male")
+x
+x[1]
+x["id"]
+x[[1]]
+x[["id"]]
+x$id
+x[c(1,3)]
+y<- "id"
+x[[y]]
+x$y
+x<-list(a=list(1,2,3,4),b=c("Monday","Tuesday"))
+x
+x[[1]]
+x[[1]][[2]]
+x[[1]][2]
+x[[c(1,3)]]
+x[[c(2,2)]]
+l<-list(df=1:10)
+l
+l$d
+l[[d]]
+l[["d",exact=FALSE]]

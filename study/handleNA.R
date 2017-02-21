@@ -1,0 +1,14 @@
+#处理缺失值
+x<-c(1,NA,2,NA,3)
+is.na(x)
+x[!is.na(x)]
+y<-c("a","b",NA,"c",NA)
+z<-complete.cases(x,y)
+z
+x[z]
+y[z]
+library(datasets)
+head(airquality)
+g<-complete.cases(airquality)
+g
+airquality[g,][1:10,]
