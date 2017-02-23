@@ -1,0 +1,7 @@
+pdf(file="myfig.pdf")
+with(airquality,plot(Wind,Temp,main="Wind and Temp in NYC"))
+dev.off()
+getwd()
+with(airquality,plot(Wind,Temp,main="Wind and Temp in NYC"))
+dev.copy(png,file="mycopy.png")
+dev.off()
